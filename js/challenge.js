@@ -18,6 +18,14 @@ const plus = document.getElementById('plus')
 plus.addEventListener('click',()=>{
     h1.textContent ++
 })
+const likes = document.querySelector('.likes')
+const heart = document.getElementById('heart')
+heart.addEventListener('click',()=>{
+const li =document.createElement('li')
+li.textContent = `You Liked number ${h1.textContent}`
+likes.appendChild(li)
+})
+
     let pause = document.getElementById('pause')
     pause.addEventListener('click',(e)=>{
       e.preventDefault()
