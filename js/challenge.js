@@ -9,6 +9,15 @@ function timeDisp(){
     h1.textContent++
     }
 }
+
+const minus = document.getElementById('minus')
+minus.addEventListener('click',()=>{
+    h1.textContent --
+})
+const plus = document.getElementById('plus')
+plus.addEventListener('click',()=>{
+    h1.textContent ++
+})
     let pause = document.getElementById('pause')
     pause.addEventListener('click',(e)=>{
       e.preventDefault()
